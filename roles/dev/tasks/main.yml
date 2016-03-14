@@ -1,0 +1,62 @@
+---
+- name: Homebrew taps
+  homebrew_tap: tap={{ item }} state=present
+  with_items:
+    - homebrew/services
+    - homebrew/versions
+    - pivotal/tap
+
+- name: Install homebrew packages
+  homebrew: name={{ item }} state=present
+  with_items:
+    - ant
+    - maven
+    - gradle
+    - springboot
+    - ag
+    - ack
+    - ctags
+    - tig
+    - mongodb
+    - redis
+    - go
+    - docker
+    - docker-compose
+    - docker-clean
+    - docker-swarm
+    - docker-machine
+    - node
+
+- name: Caskroom taps
+  homebrew_tap: tap={{ item }} state=present
+  with_items:
+    - caskroom/cask
+    - caskroom/versions
+
+- name: Install applications
+  homebrew_cask: name={{ item }} state=present
+  with_items:
+    - java
+    - intellij-idea-ce
+    - intellij-idea-eap
+    - intellij-idea-next-eap
+    - iterm2
+    - macvim
+    - sublime-text
+    - sourcetree
+    - microsoft-lync
+    - microsoft-lync-plugin
+    - sequel-pro
+    - postgres
+    - pgadmin3
+    - mysqlworkbench
+    - mongochef
+    - docker
+    - kitematic
+    - virtualbox
+    - vagrant
+    - free-ruler
+    - pencil
+    - karabiner
+
+# EOF

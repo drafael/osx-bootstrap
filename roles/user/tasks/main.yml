@@ -1,0 +1,46 @@
+---
+- name: Install homebrew packages
+  homebrew: name={{ item }} state=present
+  with_items:
+    - mc
+    - tmux
+    - vifm
+    - wget
+    - tree
+    - htop
+    - nmap
+    - ssh-copy-id
+    - ffmpeg
+    - youtube-dl
+
+- name: Caskroom taps
+  homebrew_tap: tap={{ item }} state=present
+  with_items:
+    - caskroom/cask
+
+- name: Install applications
+  homebrew_cask: name={{ item }} state=present
+  with_items:
+    - appcleaner
+    - google-chrome
+    - firefox
+    - viber
+    - skype
+    - dropbox
+    - keka
+    - java
+    - mucommander
+    - transmission
+    - vlc
+    - mplayerx
+    - microsoft-office
+    - perian
+    - air-video-server-hd
+    - carbon-copy-cloner
+    - uninstallpkg
+#    - murasaki
+    - karabiner
+    - fluid
+    - telegram
+
+# EOF

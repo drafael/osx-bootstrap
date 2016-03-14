@@ -2,8 +2,20 @@
 - hosts: localhost
   connection: local
   gather_facts: no
-  sudo: no
+  become: no
+
+  pre_tasks:
+    - name: Update homebrew formulas
+      homebrew:
+        update_homebrew: yes
+
   roles:
- #   - dotfiles
-    - homebrew
-    - homebrew-cask
+    - user
+    - dev
+    - rsc
+
+  post_tasks:
+    - name: Homebrew cleanup
+      shell: brew cleanup
+      register: result
+      changed_when: result.stdout.find("This operation has freed approximately") != -1

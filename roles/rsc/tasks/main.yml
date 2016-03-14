@@ -1,0 +1,33 @@
+---
+- name: Homebrew taps
+  homebrew_tap: tap={{ item }} state=present
+  with_items:
+    - homebrew/science
+
+- name: Install homebrew packages
+  homebrew: name={{ item }} state=present
+  with_items:
+    - r
+    - ag
+    - ack
+    - docker
+    - docker-compose
+    - docker-clean
+
+- name: Caskroom taps
+  homebrew_tap: tap={{ item }} state=present
+  with_items:
+    - caskroom/cask
+
+- name: Install applications
+  homebrew_cask: name={{ item }} state=present
+  with_items:
+    - rstudio
+#    - octave
+#    - scilab
+    - iterm2
+    - macvim
+    - sublime-text
+    - docker
+
+# EOF
