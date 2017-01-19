@@ -3,7 +3,6 @@
   homebrew_tap: tap={{ item }} state=present
   with_items:
     - homebrew/services
-    - homebrew/versions
     - pivotal/tap
 
 - name: Install homebrew packages
@@ -16,6 +15,7 @@
     - ag
     - ack
     - ctags
+    - gotags
     - tig
     - mongodb
     - redis
@@ -44,8 +44,7 @@
     - macvim
     - sublime-text
     - sourcetree
-    - microsoft-lync
-    - microsoft-lync-plugin
+    - skype-for-business
     - sequel-pro
     - postgres
     - pgadmin3
