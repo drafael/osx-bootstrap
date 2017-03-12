@@ -14,6 +14,7 @@
     - springboot
     - ag
     - ack
+    - peco
     - ctags
     - gotags
     - tig
@@ -26,6 +27,7 @@
     - docker-swarm
     - docker-machine
     - node
+    - android-platform-tools
 
 - name: Caskroom taps
   homebrew_tap: tap={{ item }} state=present
@@ -49,13 +51,15 @@
     - postgres
     - pgadmin3
     - mysqlworkbench
-    - mongochef
+    - robomongo
     - docker
     - kitematic
     - virtualbox
     - vagrant
+    - tunnelblick
     - free-ruler
     - pencil
-    - karabiner
+    - android-studio
+    - android-file-transfer
 
 # EOF
