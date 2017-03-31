@@ -28,6 +28,7 @@
     - docker-machine
     - node
     - android-platform-tools
+    - heroku
 
 - name: Caskroom taps
   homebrew_tap: tap={{ item }} state=present
@@ -40,8 +41,8 @@
   with_items:
     - java
     - intellij-idea-ce
-    - intellij-idea-eap
-    - intellij-idea-next-eap
+    # - intellij-idea-eap
+    # - intellij-idea-next-eap
     - iterm2
     - macvim
     - sublime-text
@@ -60,7 +61,8 @@
     - tunnelblick
     - free-ruler
     - pencil
-    - android-studio
+    # - android-studio
     - android-file-transfer
+    - slack
 
 # EOF
