@@ -29,6 +29,7 @@
     - node
     - android-platform-tools
     - heroku
+    - editorconfig
 
 - name: Caskroom taps
   homebrew_tap: tap={{ item }} state=present
