@@ -4,10 +4,12 @@
   with_items:
     - homebrew/services
     - pivotal/tap
+    - cloudfoundry/tap
 
 - name: Install homebrew packages
   homebrew: name={{ item }} state=present
   with_items:
+    - bash-completion
     - ant
     - maven
     - gradle
@@ -59,11 +61,13 @@
     - virtualbox
     - vagrant
     - postman
+    - insomnia
     - tunnelblick
     - free-ruler
     - pencil
     # - android-studio
     - android-file-transfer
-    - slack
+    # - slack
+    - visual-studio-code
 
 # EOF
