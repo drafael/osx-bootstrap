@@ -32,8 +32,10 @@
     - java
     - mucommander
     - transmission
+    - mpv
+#    - mplayerx
+    - google-play-music-desktop-player
     - vlc
-    - mplayerx
     - microsoft-office
     - grammarly
     - perian
