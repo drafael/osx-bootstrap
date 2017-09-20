@@ -19,6 +19,7 @@
     - peco
     - ctags
     - gotags
+    - httpie
     - tig
     - mongodb
     - redis
