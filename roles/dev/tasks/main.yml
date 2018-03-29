@@ -24,14 +24,14 @@
     - mongodb
     - redis
     - go
-    - docker
-    - docker-compose
+    # - docker
+    # - docker-compose
     - docker-clean
-    - docker-swarm
-    - docker-machine
+    # - docker-swarm
+    # - docker-machine
     - node
     - android-platform-tools
-    - heroku
+    # - heroku
     - editorconfig
 
 - name: Caskroom taps
@@ -51,17 +51,19 @@
     - sublime-text
     - docker
     - paw
+    - tower
     - transmit
     - postman
     - sourcetree
-    - skype-for-business
+    # - skype-for-business
     - tunnelblick
     - sequel-pro
+    - postico
     - postgres
-    - pgadmin3
-    - mysqlworkbench
-    - robomongo
-    - studio-3t
+    # - pgadmin4
+    # - mysqlworkbench
+    - robo-3t
+    # - studio-3t
     - virtualbox
     - vagrant
     - free-ruler

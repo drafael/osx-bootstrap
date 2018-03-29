@@ -2,7 +2,7 @@
 - name: Install homebrew packages
   homebrew: name={{ item }} state=present
   with_items:
-    - mc
+    # - mc
     - ranger
     - tmux
     - vifm
@@ -29,12 +29,12 @@
     - skype
     - dropbox
     - keka
-    - java
+    # - java
     - mucommander
+    - marta
     - transmission
     - mpv
 #    - mplayerx
-    - google-play-music-desktop-player
     - vlc
     - microsoft-office
     - grammarly
@@ -43,10 +43,10 @@
     - carbon-copy-cloner
     - uninstallpkg
 #    - murasaki
-    - fluid
+    # - fluid
     - telegram
     - goofy
-    - flume
+    # - flume
     - android-file-transfer
 
 # EOF

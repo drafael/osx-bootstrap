@@ -12,7 +12,7 @@
   roles:
     - user
     - dev
-    - rsc
+    # - rsc
 
   post_tasks:
     - name: Homebrew cleanup
