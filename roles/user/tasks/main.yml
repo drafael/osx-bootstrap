@@ -2,7 +2,7 @@
 - name: Install homebrew packages
   homebrew: name={{ item }} state=present
   with_items:
-    # - mc
+    - mc
     - ranger
     - tmux
     - vifm
@@ -13,11 +13,12 @@
     - ssh-copy-id
     - ffmpeg
     - youtube-dl
+    - ncdu
 
 - name: Caskroom taps
   homebrew_tap: tap={{ item }} state=present
   with_items:
-    - caskroom/cask
+    - homebrew/cask
 
 - name: Install applications
   homebrew_cask: name={{ item }} state=present
@@ -40,12 +41,14 @@
     - grammarly
     - perian
     - air-video-server-hd
+    - plex-media-server
     - carbon-copy-cloner
     - uninstallpkg
 #    - murasaki
     # - fluid
     - telegram
     - goofy
+    - whatsapp
     # - flume
     - android-file-transfer
 

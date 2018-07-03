@@ -13,7 +13,7 @@
     - ant
     - maven
     - gradle
-    - springboot
+    # - springboot
     - ag
     - ack
     - peco
@@ -21,8 +21,9 @@
     - gotags
     - httpie
     - tig
-    - mongodb
-    - redis
+    - tree
+    # - mongodb
+    # - redis
     - go
     # - docker
     # - docker-compose
@@ -37,30 +38,28 @@
 - name: Caskroom taps
   homebrew_tap: tap={{ item }} state=present
   with_items:
-    - caskroom/cask
-    - caskroom/versions
+    - homebrew/cask
+    - homebrew/cask-versions
 
 - name: Install applications
   homebrew_cask: name={{ item }} state=present
   with_items:
     - java
     - intellij-idea
-    - intellij-idea-ce
     - iterm2
     - macvim
     - sublime-text
     - docker
     - paw
     - tower
+    # - tower2
     - transmit
     - postman
-    - sourcetree
     # - skype-for-business
     - tunnelblick
     - sequel-pro
     - postico
     - postgres
-    # - pgadmin4
     # - mysqlworkbench
     - robo-3t
     # - studio-3t
@@ -71,7 +70,6 @@
     # - android-studio
     - android-file-transfer
     - android-sdk
-    # - slack
-    - visual-studio-code
+    # - visual-studio-code
 
 # EOF
