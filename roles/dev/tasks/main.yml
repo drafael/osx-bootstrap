@@ -25,11 +25,12 @@
     # - mongodb
     # - redis
     - go
-    # - docker
-    # - docker-compose
     - docker-clean
     # - docker-swarm
     # - docker-machine
+    - pipenv
+    - pyenv
+    - pyenv-virtualenv
     - node
     - android-platform-tools
     # - heroku
@@ -44,6 +45,7 @@
 - name: Install applications
   homebrew_cask: name={{ item }} state=present
   with_items:
+    - java8
     - java
     - intellij-idea
     - iterm2
@@ -71,5 +73,7 @@
     - android-file-transfer
     - android-sdk
     # - visual-studio-code
+    - pycharm
+    # - pycharm-ce
 
 # EOF

@@ -10,14 +10,16 @@
     - r
     - ag
     - ack
-    - docker
-    - docker-compose
     - docker-clean
+    - pipenv
+    - pyenv
+    - pyenv-virtualenv
 
 - name: Caskroom taps
   homebrew_tap: tap={{ item }} state=present
   with_items:
     - homebrew/cask
+    - homebrew/cask-versions
 
 - name: Install applications
   homebrew_cask: name={{ item }} state=present
@@ -29,5 +31,7 @@
     - macvim
     - sublime-text
     - docker
+    - pycharm
+    # - pycharm-ce
 
 # EOF
