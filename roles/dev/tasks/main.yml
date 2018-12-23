@@ -46,7 +46,7 @@
   homebrew_cask: name={{ item }} state=present
   with_items:
     - java8
-    - java
+    # - java
     - intellij-idea
     - iterm2
     - macvim
@@ -56,7 +56,7 @@
     - tower
     # - tower2
     - transmit
-    - postman
+    # - postman
     # - skype-for-business
     - tunnelblick
     - sequel-pro
@@ -65,8 +65,8 @@
     # - mysqlworkbench
     - robo-3t
     # - studio-3t
-    - virtualbox
-    - vagrant
+    # - virtualbox
+    # - vagrant
     - free-ruler
     - pencil
     # - android-studio
@@ -74,6 +74,6 @@
     - android-sdk
     # - visual-studio-code
     - pycharm
-    # - pycharm-ce
+    - webstorm
 
 # EOF

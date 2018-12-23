@@ -5,7 +5,7 @@
     - mc
     - ranger
     - tmux
-    - vifm
+    # - vifm
     - wget
     - tree
     - htop
